@@ -1,7 +1,7 @@
 # CO20 The Pink Citadel
 Рейд KSK на потерянные территории с целью уничтожить ПВО и минометы боевиков
 
-<img src='{Image URL}' />
+<img src='https://github.com/rempopo/CO20_Operation_Pink_Citadel.abramia/blob/master/overview.jpg?raw=true' />
 
 ### Version: 1C
 
