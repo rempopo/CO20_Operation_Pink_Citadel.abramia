@@ -53,7 +53,7 @@ fnc_checkCasPosition = {
 	[
 		player
 		, format [
-			"HQ, das ist Dolch-1, der Luftschlag anfordert. Steuerungstyp 2, Ida, pause, %1, pause, %2, pause, %3, pause, gepanzerte fahrzeuge, 4, pause, %4, pause, keine, pause, Süden 1km, pause, Süden."
+			"HQ, das ist Dolch-2, der Luftschlag anfordert. Steuerungstyp 2, Ida, pause, %1, pause, %2, pause, %3, pause, gepanzerte fahrzeuge, 4, pause, %4, pause, keine, pause, Süden 1km, pause, Süden."
 			, _dir
 			, _dist
 			, _elev
@@ -66,14 +66,14 @@ fnc_checkCasPosition = {
 	if ((_pos call dzn_fnc_getPosOnMapGrid) distance2d airstrike_pos > 500) exitWith {	
 		[
 			[resistance, "HQ"]
-			, "Dolch-1, das ist HQ, Amerikaner sieht keine thermischen Ziele in der vorgesehenen Position. Überprüfen Sie Ihre Anfrage!"
+			, "Dolch-2, das ist HQ, Amerikaner sieht keine thermischen Ziele in der vorgesehenen Position. Überprüfen Sie Ihre Anfrage!"
 		] remoteExec ["sideChat", 0];
-		hint "CAS unit doesn't found any targets in provided position. Check your request!"
+		hint "CAS unit didn't find any targets in provided position. Check your request!"
 	};
 	
 	[
 		[resistance, "HQ"]
-		, "Dolch 1, das ist HQ, Ziele erworben. CAS-Eingang in 30 Sekunden. Ende."
+		, "Dolch-2, das ist HQ, Ziele erworben. CAS-Eingang in 30 Sekunden. Ende."
 	] remoteExec ["sideChat", 0];
 	
 	hint "CAS inbound in 30 seconds";
@@ -102,32 +102,5 @@ ACE_ACTIONS_TABLE
 			&& call TFAR_fnc_haveLRRadio 
 		}
 	]
-	/*
-	[
-		"SELF"
-		, "ACE Action 1"
-		, "ace_action_1"
-		, ""
-		, { hint "IACE Action 1 is done"; }
-		, { true }
-	]
-	,[
-		"SELF"
-		, "ACE Sub Action of 1"
-		, "ace_subaction_1"
-		, "ace_action_1"
-		, { hint "IACE Sub Action 1 is done"; }
-		, { true }
-	]
-	,[
-		["RHS_CH_47F"]
-		, "ACE Action for CH47"
-		, "ace_action_for_CH47"
-		, ""
-		, { hint 'ACE Action for CH47 is done' }
-		, { true}	
-	]
-	*/
-
 	
 ACE_ACTIONS_TABLE_END

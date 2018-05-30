@@ -42,10 +42,10 @@ PlayerConnectedEH = addMissionEventHandler ["PlayerConnected", {
 
 
 [] spawn {
-	// Wait random 7-12 minutes, then start artillery 5 salvos each 30 seconds (150 seconds in total)
+	// Wait random 7-12 minutes, then start artillery 5 salvos each 30 seconds (90 seconds in total)
 	while { alive (gunner AmbientArtyBattery1) || alive (gunner AmbientArtyBattery2) } do {
 		sleep 60*random [7,10,12];
-		[[AmbientArtyBattery1, AmbientArtyBattery2], AmbientArty, [-3, 30], true] spawn dzn_fnc_artilleryFiremission;
+		[[AmbientArtyBattery1, AmbientArtyBattery2], AmbientArty, [-5, 30], true] spawn dzn_fnc_artilleryFiremission;
 	};
 };
 
@@ -73,19 +73,7 @@ fnc_startLoopSound = {
 	};
 };
 
-{ 
-	private _plane = _x;
-       {
-	       _lgt = "#lightpoint" createVehicle [0,0,0];   
-		_lgt lightattachobject [_plane, _x];
-		_lgt setLightColor [250,0,0];
-		_lgt setLightAttenuation [0.3,0,0,250]; 
-		_lgt setLightIntensity 165;
-       } forEach [
-		[0,-5,-3]
-		, [0,0,-3]
-	];
-       
+{        
 	_x spawn fnc_startLoopSound;
 } forEach (synchronizedObjects C130Logic);
 
