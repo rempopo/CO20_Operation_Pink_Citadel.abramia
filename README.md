@@ -18,8 +18,8 @@
 - Убран вертолет эвакуации
 
 
-# NOT APPROVED
+# APPROVED
 | Reviewer | Result |
 | ------------ | ------------- |
 | Vonscheer | Approve |
-| - | - |
+| Vocasyan | Approve |
