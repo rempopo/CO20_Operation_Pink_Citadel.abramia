@@ -16,14 +16,14 @@ class EditorData
 	};
 	class LayerIndexProvider
 	{
-		nextID=101;
+		nextID=129;
 	};
 	class Camera
 	{
-		pos[]={9097.8496,167.03027,2236.4023};
-		dir[]={0.38820407,-0.87903774,-0.27720425};
-		up[]={0.71537113,0.47657898,-0.51082492};
-		aside[]={-0.58119673,-1.4351099e-006,-0.8139351};
+		pos[]={8924.3301,125.70978,1553.325};
+		dir[]={-0.10448558,-0.86833429,0.48486295};
+		up[]={-0.18292385,0.49597436,0.8488512};
+		aside[]={0.97756535,8.3266059e-008,0.21066041};
 	};
 };
 binarizationWanted=0;
@@ -10736,6 +10736,7 @@ class Mission
 					init="this setVariable ['tSF_EVC', 'OPFOR GNR'];";
 					id=455;
 					type="Logic";
+					atlOffset=7.6293945e-006;
 				};
 				class Item5
 				{
@@ -11119,16 +11120,16 @@ class Mission
 			dataType="Object";
 			class PositionInfo
 			{
-				position[]={8922.7695,118.66769,1556.703};
-				angles[]={0,4.5476813,0};
+				position[]={8923.6299,118.6665,1556.936};
+				angles[]={0,4.5476813,6.2818046};
 			};
 			side="Empty";
-			flags=4;
 			class Attributes
 			{
 			};
 			id=386;
 			type="CUP_B_M2StaticMG_MiniTripod_GER_Fleck";
+			atlOffset=5.8349915;
 		};
 		class Item90
 		{
@@ -11168,7 +11169,7 @@ class Mission
 			dataType="Object";
 			class PositionInfo
 			{
-				position[]={8931.6846,118.70126,1541.8555};
+				position[]={8931.8369,118.70121,1542.3495};
 				angles[]={0,3.8644509,0};
 			};
 			side="Empty";
@@ -13596,7 +13597,7 @@ class Mission
 			class PositionInfo
 			{
 				position[]={9785.3105,23.361504,2315.3369};
-				angles[]={-0,4.7652206,0};
+				angles[]={0,4.7652206,0};
 			};
 			side="Empty";
 			flags=4;
