@@ -9,7 +9,7 @@
 
 // ******** ASSIGNED and UNIFORM ITEMS MACRO ********
 #define NVG_NIGHT_ITEM		if (daytime < 9 || daytime > 20) then { "NVGoggles_OPFOR" } else { "" }
-#define BINOCULAR_ITEM		"Binocular"
+#define BINOCULAR_ITEM		"ACE_Vector"
 
 #define ASSIGNED_ITEMS		"ItemMap","ItemCompass","ACE_Altimeter","ItemRadio", NVG_NIGHT_ITEM
 #define ASSIGNED_ITEMS_L	"ItemMap","ItemCompass","ACE_Altimeter","ItemRadio", NVG_NIGHT_ITEM, BINOCULAR_ITEM
